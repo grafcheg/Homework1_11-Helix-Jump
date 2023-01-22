@@ -24,9 +24,7 @@ public class Sector : MonoBehaviour
     private void UpdateMaterial()
     {
         Renderer sectorRenderer = GetComponent<Renderer>();
-        // sectorRenderer.sharedMaterial = IsGood ? GoodMaterial : BadMaterial;
         if (IsGood && IsBreakable)
-            // sectorRenderer.sharedMaterial = BreakableMaterial;
             sectorRenderer.material = BreakableMaterial;
         else if (IsGood)
             sectorRenderer.sharedMaterial = GoodMaterial;
